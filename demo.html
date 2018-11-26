@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>登陆</title>
+
+        <link rel="stylesheet" href="./styles.css">
+        <style>
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -100;
+          } 
+    </style>
+    <script type="text/javascript">
+        $('#login-button').click(function(event){
+            event.preventDefault();
+            $('form').fadeOut(500);
+            $('.wrapper').addClass('form-success');
+        });
+        </script>
+    </head>
+    <body>
+        <canvas id="background">
+        </canvas>
+        <div class="wrapper">
+
+            <div class="container">
+                <h1>SSJT&Login</h1>
+                <form class="form">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" id="login-button">Login</button>
+                </form>
+            </div>
+
+            <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </div>
+
+
+        <script src="./jquery-2.1.1.min.js"></script>
+        <script async src="./background.min.js"></script>
+
+       
+    </body>
+</html>
